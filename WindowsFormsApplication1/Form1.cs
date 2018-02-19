@@ -142,10 +142,10 @@ namespace WindowsFormsApplication1
 
         private void computeThree()
         {
-            var length = numThreeLength.Value;
-            var width = numThreeWidth.Value;
-            var height = numThreeHeight.Value;
-            var lumens = numThreeLumens.Value;
+            var length = numTwoLength.Value;
+            var width = numTwoWidth.Value;
+            var height = numTwoHeight.Value;
+            var lumens = numTwoLumens.Value;
 
             double fourpi = 4 * _PI;
             double i = (double)lumens / (double)fourpi;
@@ -201,23 +201,27 @@ namespace WindowsFormsApplication1
 
             if (comboCavity.SelectedIndex == 0)
             {
-                h = rh;
+                h = 5 * rh;
             }
             if (comboCavity.SelectedIndex == 1)
             {
-                h = rch;
+                h = 5 * rch;
             }
             if (comboCavity.SelectedIndex == 2)
             {
-                h = cch;
+                h = 5 * cch;
             }
             if (comboCavity.SelectedIndex == 3)
             {
-                h = fch;
+                h = 5 * fch;
+            }
+            if (comboCavity.SelectedIndex == 4)
+            {
+                h = rh;
             }
 
             var lw = length + width;
-            var top = 5 * h * lw;
+            var top = h * lw;
             var bottom = length * width;
 
             if (bottom == 0)
@@ -249,18 +253,10 @@ namespace WindowsFormsApplication1
             computeLuminance();
         }
 
-        private void buttonThree_Click(object sender, EventArgs e)
-        {
-            computeThree();
-        }
-
-        private void buttonLuminanceCalculate_Click_1(object sender, EventArgs e)
-        {
-            computeLuminance();
-        }
         private void buttonTwoCalculate(object sender, EventArgs e)
         {
             computeTwo();
+            computeThree();
         }
 
         private void buttonCavityCalculate_Click(object sender, EventArgs e)
@@ -359,9 +355,7 @@ namespace WindowsFormsApplication1
             lb42.Text = "feet";
             lb43.Text = "feet";
             lb45.Text = "fc";
-            lb51.Text = "feet";
-            lb52.Text = "feet";
-            lb53.Text = "feet";
+
             lb55.Text = "feet";
             lb61.Text = "feet";
             lb62.Text = "feet";
@@ -383,10 +377,7 @@ namespace WindowsFormsApplication1
             numTwoLength.Value = (decimal)numTwoLength.Value * mft;
             numTwoWidth.Value = (decimal)numTwoWidth.Value * mft;
             numTwoHeight.Value = (decimal)numTwoHeight.Value * mft;
-            textThreeOutput.Text = String.Empty;
-            numThreeLength.Value = (decimal)numThreeLength.Value * mft;
-            numThreeWidth.Value = (decimal)numThreeWidth.Value * mft;
-            numThreeHeight.Value = (decimal)numThreeHeight.Value * mft;
+            textTwoOutput.Text = String.Empty;
             textThreeOutput.Text = String.Empty;
             numCavityLength.Value = (decimal)numCavityLength.Value * mft;
             numCavityWidth.Value = (decimal)numCavityWidth.Value * mft;
@@ -415,9 +406,6 @@ namespace WindowsFormsApplication1
             lb42.Text = "meters";
             lb43.Text = "meters";
             lb45.Text = "lux";
-            lb51.Text = "meters";
-            lb52.Text = "meters";
-            lb53.Text = "meters";
             lb55.Text = "meters";
             lb61.Text = "meters";
             lb62.Text = "meters";
@@ -440,9 +428,6 @@ namespace WindowsFormsApplication1
             numTwoWidth.Value = (decimal)numTwoWidth.Value * ftm;
             numTwoHeight.Value = (decimal)numTwoHeight.Value * ftm;
             textTwoOutput.Text = String.Empty;
-            numThreeLength.Value = (decimal)numThreeLength.Value * ftm;
-            numThreeWidth.Value = (decimal)numThreeWidth.Value * ftm;
-            numThreeHeight.Value = (decimal)numThreeHeight.Value * ftm;
             textThreeOutput.Text = String.Empty;
             numCavityLength.Value = (decimal)numCavityLength.Value * ftm;
             numCavityWidth.Value = (decimal)numCavityWidth.Value * ftm;

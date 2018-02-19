@@ -311,8 +311,21 @@ namespace WindowsFormsApplication1
             }
 
             var cavity = top / bottom;
+            if (comboCavity.SelectedIndex == 4)
+            {
+                if (top != 0)
+                {
 
-            textCavityOutput.Text = cavity.ToString("#.##");
+                    cavity = 1 / cavity;
+                    textCavityOutput.Text = cavity.ToString("#.##");
+                }
+
+            }
+            else
+            {
+                textCavityOutput.Text = cavity.ToString("#.##");
+            }
+            
 
             // add to history 
             
@@ -564,6 +577,8 @@ namespace WindowsFormsApplication1
             a.Select(0, a.Text.Length);
         }
         
+
+        //help
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             this.Width = 1000;

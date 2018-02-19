@@ -581,12 +581,135 @@ namespace WindowsFormsApplication1
         //help
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            this.Width = 1000;
+            this.Width = 1100;
         }
 
         private void buttonHelpHide_Click(object sender, EventArgs e)
         {
             this.Width = 700;
+        }
+
+        private void buttonHelpChoose_Click(object sender, EventArgs e)
+        {
+            if (comboHelp.SelectedIndex == 0)
+            {
+                rtbHelp.Text = "          " +
+                    "Spacing to Height ratio (SHR or S/Hm) is defined as the ratio of the distance between" +
+                    " adjacent luminaires (centre to centre), to their height above the working plane." +
+                    " For a rectangular arrangement of luminaires and by approximation,";
+                pictureSpacing.Visible = true;
+                pictureSpacingLayout1.Visible = false;
+                pictureSpacingLayout2.Visible = false;
+                pictureSpacing.SizeMode = PictureBoxSizeMode.StretchImage;
+                buttonSpaceHide();
+                pictureRoomIndex1.Visible = false;
+                pictureRoomIndex2.Visible = false;
+                buttonRoomHide();
+            }
+            if (comboHelp.SelectedIndex == 1)
+            {
+                rtbHelp.Text = "          " +
+                    "LUMINAIRE SPACING depends upon the customer and the designer itself." +
+                    " There are several ways to design the luminaire spacing and these tables" +
+                    " provide the typical arrangement of said luminaires. \n\n" +
+                "Typical luminaires in various interiors \n\n";
+                pictureSpacing.Visible = false;
+                pictureSpacingLayout1.Visible = true;
+                buttonSpaceShow();
+                pictureSpacingLayout1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureSpacingLayout2.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex1.Visible = false;
+                pictureRoomIndex2.Visible = false;
+                buttonRoomHide();
+            }
+            if (comboHelp.SelectedIndex == 2)
+            {
+                rtbHelp.Text = "          ";
+                pictureRoomIndex1.Visible = true;
+                pictureSpacing.Visible = false;
+                pictureSpacingLayout1.Visible = false;
+                pictureSpacingLayout2.Visible = false;
+                buttonSpaceHide();
+                pictureRoomIndex1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex2.SizeMode = PictureBoxSizeMode.StretchImage;
+                buttonRoomShow();
+            }
+            if (comboHelp.SelectedIndex == 3)
+            {
+                rtbHelp.Text = "          \n" + "TYPES OF LUMINAIRES" +
+                    "(this affects the mounting height for the spacing formula, heights depends on distance from floor to luminaire) \n\n" +
+                    "     - RECESSED. Installed above the ceiling, this type of lighting has an opening that is flush with the ceiling." +
+                    " A recessed light requires at least 6 inches of clearance above the ceiling, and insulation is essential to ensure that" +
+                    " condensation does not drip into the fixture. Recessed lighting sends a relatively narrow band of light in one direction;" +
+                    " it can be used to provide ambient, task or accent lighting. \n\n" +
+                    "     - TRACK. Mounted or suspended from the ceiling, track lighting consists of a linear housing containing several heads" +
+                    " that can be positioned anywhere along a track; the direction of the heads is adjustable also. Track lighting is often used" +
+                    " for task or accent lighting. \n\n" +
+                    "     - UNDERCABINET. Mounted under kitchen cabinets, this type of lighting can be linear or a single puck-shaped fixture." +
+                    " Undercabinet lighting is extremely popular as task lighting in a kitchen. \n\n" +
+                    "    PENDANTS. Suspended from the ceiling, a pendant light directs its light down, typically over a table or kitchen island." +
+                    " A pendant can enhance the decorative style of a room. Pendants can provide ambient or task lighting. (indirect) \n\n" +
+                    "     - CHANDELIERS. Suspended from the ceiling, chandeliers direct their light upward, typically over a table." +
+                    " They can enhance the decorative style of a room. Chandeliers provide ambient lighting. \n\n" +
+                    "     - CEILING. This type of fixture is mounted directly to the ceiling and has a glass or plastic shade concealing the light bulb." +
+                    " Ceiling fixtures have been common in homes for nearly a hundred years, often providing all the ambient light in a room.\n\n" +
+                    "     - WALL SCONES. Surface-mounted to the wall, sconces can direct light upwards or downwards, and their covers or shades" +
+                    " can add a stylistic touch to a room. Wall sconces provide ambient or task lighting. \n\n" +
+                    "     - DESK, FLOOR, AND TABLE LAMPS. Made in a wide range of sizes and styles, lamps are extremely versatile and portable" +
+                    " sources of light in a room. Most lamps direct light downward, with the exception of a torchiere, which is a floor lamp that" +
+                    " directs its light upward. Lamps are often used as task lights, particularly for reading, but can also provide ambient light. \n\n";
+                pictureSpacing.Visible = false;
+                pictureSpacingLayout1.Visible = false;
+                pictureSpacingLayout2.Visible = false;
+                buttonSpaceHide();
+                pictureRoomIndex1.Visible = false;
+                pictureRoomIndex2.Visible = false;
+                buttonRoomHide();
+            }
+        }
+        private void buttonSpaceShow()
+        {
+            buttonSpacingLayout1.Visible = true;
+            buttonSpacingLayout2.Visible = true;
+        }
+        private void buttonSpaceHide()
+        {
+            buttonSpacingLayout1.Visible = false;
+            buttonSpacingLayout2.Visible = false;
+        }
+
+        private void buttonSpacingLayout1_Click(object sender, EventArgs e)
+        {
+            pictureSpacingLayout1.Visible = true;
+            pictureSpacingLayout2.Visible = false;
+        }
+
+        private void buttonSpacingLayout2_Click(object sender, EventArgs e)
+        {
+            pictureSpacingLayout1.Visible = false;
+            pictureSpacingLayout2.Visible = true;
+        }
+        private void buttonRoomShow()
+        {
+            buttonRoom1.Visible = true;
+            buttonRoom2.Visible = true;
+        }
+        private void buttonRoomHide()
+        {
+            buttonRoom1.Visible = false;
+            buttonRoom2.Visible = false;
+        }
+
+        private void buttonRoom1_Click(object sender, EventArgs e)
+        {
+            pictureRoomIndex1.Visible = true;
+            pictureRoomIndex2.Visible = false;
+        }
+
+        private void buttonRoom2_Click(object sender, EventArgs e)
+        {
+            pictureRoomIndex1.Visible = false;
+            pictureRoomIndex2.Visible = true;
         }
     }
 }

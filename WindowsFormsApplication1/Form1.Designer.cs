@@ -144,10 +144,20 @@
             this.richtbHistory = new System.Windows.Forms.RichTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.buttonHelp = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboHelp = new System.Windows.Forms.ComboBox();
             this.buttonHelpChoose = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.buttonHelpHide = new System.Windows.Forms.Button();
+            this.rtbHelp = new System.Windows.Forms.RichTextBox();
+            this.buttonSpacingLayout1 = new System.Windows.Forms.Button();
+            this.buttonSpacingLayout2 = new System.Windows.Forms.Button();
+            this.pictureRoomIndex2 = new System.Windows.Forms.PictureBox();
+            this.pictureRoomIndex1 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacingLayout2 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacingLayout1 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacing = new System.Windows.Forms.PictureBox();
+            this.buttonRoom1 = new System.Windows.Forms.Button();
+            this.buttonRoom2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -188,6 +198,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCavityWidth)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacing)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -1564,31 +1579,47 @@
             this.buttonHelp.UseVisualStyleBackColor = true;
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
-            // comboBox1
+            // comboHelp
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(28, 10);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(206, 21);
-            this.comboBox1.TabIndex = 6;
+            this.comboHelp.FormattingEnabled = true;
+            this.comboHelp.Items.AddRange(new object[] {
+            "Spacing to Height Ratio",
+            "Luminaire Spacing",
+            "Room Indexes",
+            "Types of Luminaires"});
+            this.comboHelp.Location = new System.Drawing.Point(28, 10);
+            this.comboHelp.Name = "comboHelp";
+            this.comboHelp.Size = new System.Drawing.Size(303, 21);
+            this.comboHelp.TabIndex = 6;
             // 
             // buttonHelpChoose
             // 
-            this.buttonHelpChoose.Location = new System.Drawing.Point(237, 10);
+            this.buttonHelpChoose.Location = new System.Drawing.Point(337, 10);
             this.buttonHelpChoose.Name = "buttonHelpChoose";
             this.buttonHelpChoose.Size = new System.Drawing.Size(43, 23);
             this.buttonHelpChoose.TabIndex = 7;
             this.buttonHelpChoose.Text = "Show";
             this.buttonHelpChoose.UseVisualStyleBackColor = true;
+            this.buttonHelpChoose.Click += new System.EventHandler(this.buttonHelpChoose_Click);
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.buttonRoom2);
+            this.groupBox6.Controls.Add(this.buttonRoom1);
+            this.groupBox6.Controls.Add(this.pictureRoomIndex2);
+            this.groupBox6.Controls.Add(this.pictureRoomIndex1);
+            this.groupBox6.Controls.Add(this.buttonSpacingLayout2);
+            this.groupBox6.Controls.Add(this.buttonSpacingLayout1);
+            this.groupBox6.Controls.Add(this.pictureSpacingLayout2);
+            this.groupBox6.Controls.Add(this.pictureSpacingLayout1);
+            this.groupBox6.Controls.Add(this.pictureSpacing);
+            this.groupBox6.Controls.Add(this.rtbHelp);
             this.groupBox6.Controls.Add(this.buttonHelpHide);
             this.groupBox6.Controls.Add(this.buttonHelpChoose);
-            this.groupBox6.Controls.Add(this.comboBox1);
+            this.groupBox6.Controls.Add(this.comboHelp);
             this.groupBox6.Location = new System.Drawing.Point(686, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(286, 416);
+            this.groupBox6.Size = new System.Drawing.Size(386, 416);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             // 
@@ -1602,12 +1633,117 @@
             this.buttonHelpHide.UseVisualStyleBackColor = true;
             this.buttonHelpHide.Click += new System.EventHandler(this.buttonHelpHide_Click);
             // 
+            // rtbHelp
+            // 
+            this.rtbHelp.BackColor = System.Drawing.Color.White;
+            this.rtbHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.rtbHelp.Location = new System.Drawing.Point(7, 38);
+            this.rtbHelp.Name = "rtbHelp";
+            this.rtbHelp.ReadOnly = true;
+            this.rtbHelp.Size = new System.Drawing.Size(373, 371);
+            this.rtbHelp.TabIndex = 9;
+            this.rtbHelp.Text = "";
+            // 
+            // buttonSpacingLayout1
+            // 
+            this.buttonSpacingLayout1.Location = new System.Drawing.Point(305, 290);
+            this.buttonSpacingLayout1.Name = "buttonSpacingLayout1";
+            this.buttonSpacingLayout1.Size = new System.Drawing.Size(50, 50);
+            this.buttonSpacingLayout1.TabIndex = 13;
+            this.buttonSpacingLayout1.Text = "part 1";
+            this.buttonSpacingLayout1.UseVisualStyleBackColor = true;
+            this.buttonSpacingLayout1.Visible = false;
+            this.buttonSpacingLayout1.Click += new System.EventHandler(this.buttonSpacingLayout1_Click);
+            // 
+            // buttonSpacingLayout2
+            // 
+            this.buttonSpacingLayout2.Location = new System.Drawing.Point(305, 351);
+            this.buttonSpacingLayout2.Name = "buttonSpacingLayout2";
+            this.buttonSpacingLayout2.Size = new System.Drawing.Size(50, 50);
+            this.buttonSpacingLayout2.TabIndex = 14;
+            this.buttonSpacingLayout2.Text = "part 2";
+            this.buttonSpacingLayout2.UseVisualStyleBackColor = true;
+            this.buttonSpacingLayout2.Visible = false;
+            this.buttonSpacingLayout2.Click += new System.EventHandler(this.buttonSpacingLayout2_Click);
+            // 
+            // pictureRoomIndex2
+            // 
+            this.pictureRoomIndex2.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex2;
+            this.pictureRoomIndex2.Location = new System.Drawing.Point(14, 45);
+            this.pictureRoomIndex2.Name = "pictureRoomIndex2";
+            this.pictureRoomIndex2.Size = new System.Drawing.Size(268, 356);
+            this.pictureRoomIndex2.TabIndex = 16;
+            this.pictureRoomIndex2.TabStop = false;
+            this.pictureRoomIndex2.Visible = false;
+            // 
+            // pictureRoomIndex1
+            // 
+            this.pictureRoomIndex1.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex1;
+            this.pictureRoomIndex1.Location = new System.Drawing.Point(14, 45);
+            this.pictureRoomIndex1.Name = "pictureRoomIndex1";
+            this.pictureRoomIndex1.Size = new System.Drawing.Size(268, 356);
+            this.pictureRoomIndex1.TabIndex = 15;
+            this.pictureRoomIndex1.TabStop = false;
+            this.pictureRoomIndex1.Visible = false;
+            // 
+            // pictureSpacingLayout2
+            // 
+            this.pictureSpacingLayout2.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout2;
+            this.pictureSpacingLayout2.Location = new System.Drawing.Point(38, 136);
+            this.pictureSpacingLayout2.Name = "pictureSpacingLayout2";
+            this.pictureSpacingLayout2.Size = new System.Drawing.Size(244, 263);
+            this.pictureSpacingLayout2.TabIndex = 12;
+            this.pictureSpacingLayout2.TabStop = false;
+            this.pictureSpacingLayout2.Visible = false;
+            // 
+            // pictureSpacingLayout1
+            // 
+            this.pictureSpacingLayout1.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout1;
+            this.pictureSpacingLayout1.Location = new System.Drawing.Point(38, 136);
+            this.pictureSpacingLayout1.Name = "pictureSpacingLayout1";
+            this.pictureSpacingLayout1.Size = new System.Drawing.Size(244, 263);
+            this.pictureSpacingLayout1.TabIndex = 11;
+            this.pictureSpacingLayout1.TabStop = false;
+            this.pictureSpacingLayout1.Visible = false;
+            // 
+            // pictureSpacing
+            // 
+            this.pictureSpacing.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacing;
+            this.pictureSpacing.Location = new System.Drawing.Point(84, 235);
+            this.pictureSpacing.Name = "pictureSpacing";
+            this.pictureSpacing.Size = new System.Drawing.Size(247, 105);
+            this.pictureSpacing.TabIndex = 10;
+            this.pictureSpacing.TabStop = false;
+            this.pictureSpacing.Visible = false;
+            // 
+            // buttonRoom1
+            // 
+            this.buttonRoom1.Location = new System.Drawing.Point(305, 290);
+            this.buttonRoom1.Name = "buttonRoom1";
+            this.buttonRoom1.Size = new System.Drawing.Size(50, 50);
+            this.buttonRoom1.TabIndex = 17;
+            this.buttonRoom1.Text = "part 1";
+            this.buttonRoom1.UseVisualStyleBackColor = true;
+            this.buttonRoom1.Visible = false;
+            this.buttonRoom1.Click += new System.EventHandler(this.buttonRoom1_Click);
+            // 
+            // buttonRoom2
+            // 
+            this.buttonRoom2.Location = new System.Drawing.Point(305, 351);
+            this.buttonRoom2.Name = "buttonRoom2";
+            this.buttonRoom2.Size = new System.Drawing.Size(50, 50);
+            this.buttonRoom2.TabIndex = 18;
+            this.buttonRoom2.Text = "part 2";
+            this.buttonRoom2.UseVisualStyleBackColor = true;
+            this.buttonRoom2.Visible = false;
+            this.buttonRoom2.Click += new System.EventHandler(this.buttonRoom2_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(984, 436);
+            this.ClientSize = new System.Drawing.Size(684, 436);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.groupBox8);
@@ -1669,6 +1805,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCavityWidth)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacing)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1791,10 +1932,20 @@
         private System.Windows.Forms.Label lb55;
         private System.Windows.Forms.TextBox textThreeOutput;
         private System.Windows.Forms.Button buttonHelp;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboHelp;
         private System.Windows.Forms.Button buttonHelpChoose;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button buttonHelpHide;
+        private System.Windows.Forms.RichTextBox rtbHelp;
+        private System.Windows.Forms.PictureBox pictureSpacing;
+        private System.Windows.Forms.PictureBox pictureSpacingLayout1;
+        private System.Windows.Forms.PictureBox pictureSpacingLayout2;
+        private System.Windows.Forms.Button buttonSpacingLayout2;
+        private System.Windows.Forms.Button buttonSpacingLayout1;
+        private System.Windows.Forms.PictureBox pictureRoomIndex1;
+        private System.Windows.Forms.PictureBox pictureRoomIndex2;
+        private System.Windows.Forms.Button buttonRoom2;
+        private System.Windows.Forms.Button buttonRoom1;
     }
 }
 

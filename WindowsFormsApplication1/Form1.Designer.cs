@@ -99,6 +99,9 @@
             this.numLuminanceLength = new System.Windows.Forms.NumericUpDown();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.lb55 = new System.Windows.Forms.Label();
+            this.textThreeOutput = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.lb45 = new System.Windows.Forms.Label();
             this.textTwoOutput = new System.Windows.Forms.TextBox();
@@ -138,11 +141,9 @@
             this.label56 = new System.Windows.Forms.Label();
             this.numCavityWidth = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richtbHistory = new System.Windows.Forms.RichTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.lb55 = new System.Windows.Forms.Label();
-            this.textThreeOutput = new System.Windows.Forms.TextBox();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -232,6 +233,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(310, 360);
             this.tabControl1.TabIndex = 1;
+            //this.tabControl1.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // tabPage1
             // 
@@ -337,6 +339,7 @@
             this.numLuminairesMF.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesMF.TabIndex = 31;
             this.numLuminairesMF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesMF.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // label26
             // 
@@ -365,6 +368,7 @@
             this.numLuminairesCU.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesCU.TabIndex = 29;
             this.numLuminairesCU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesCU.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // buttonLuminairesCalculate
             // 
@@ -399,6 +403,7 @@
             this.numLuminairesIllumination.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesIllumination.TabIndex = 26;
             this.numLuminairesIllumination.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesIllumination.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // label9
             // 
@@ -417,6 +422,7 @@
             this.numLuminairesLamps.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesLamps.TabIndex = 24;
             this.numLuminairesLamps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesLamps.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb13
             // 
@@ -454,6 +460,7 @@
             this.numLuminairesLumens.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesLumens.TabIndex = 21;
             this.numLuminairesLumens.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesLumens.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb12
             // 
@@ -486,6 +493,7 @@
             this.numLuminairesWidth.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesWidth.TabIndex = 18;
             this.numLuminairesWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesWidth.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb11
             // 
@@ -518,6 +526,7 @@
             this.numLuminairesLength.Size = new System.Drawing.Size(100, 20);
             this.numLuminairesLength.TabIndex = 15;
             this.numLuminairesLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminairesLength.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // tabPage2
             // 
@@ -652,6 +661,7 @@
             this.numIllumMF.Size = new System.Drawing.Size(100, 20);
             this.numIllumMF.TabIndex = 26;
             this.numIllumMF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numIllumMF.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // label18
             // 
@@ -680,6 +690,7 @@
             this.numIllumCU.Size = new System.Drawing.Size(100, 20);
             this.numIllumCU.TabIndex = 24;
             this.numIllumCU.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numIllumCU.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb23
             // 
@@ -717,6 +728,7 @@
             this.numIllumLumens.Size = new System.Drawing.Size(100, 20);
             this.numIllumLumens.TabIndex = 21;
             this.numIllumLumens.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numIllumLumens.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb22
             // 
@@ -749,6 +761,7 @@
             this.numIllumWidth.Size = new System.Drawing.Size(100, 20);
             this.numIllumWidth.TabIndex = 18;
             this.numIllumWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numIllumWidth.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb21
             // 
@@ -781,6 +794,7 @@
             this.numIllumLength.Size = new System.Drawing.Size(100, 20);
             this.numIllumLength.TabIndex = 15;
             this.numIllumLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numIllumLength.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // tabPage3
             // 
@@ -885,6 +899,7 @@
             this.numLuminanceTF.Size = new System.Drawing.Size(100, 20);
             this.numLuminanceTF.TabIndex = 26;
             this.numLuminanceTF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminanceTF.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // label2
             // 
@@ -903,6 +918,7 @@
             this.numLuminanceLamps.Size = new System.Drawing.Size(100, 20);
             this.numLuminanceLamps.TabIndex = 24;
             this.numLuminanceLamps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminanceLamps.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb33
             // 
@@ -940,6 +956,7 @@
             this.numLuminanceLumens.Size = new System.Drawing.Size(100, 20);
             this.numLuminanceLumens.TabIndex = 21;
             this.numLuminanceLumens.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminanceLumens.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb32
             // 
@@ -972,6 +989,7 @@
             this.numLuminanceWidth.Size = new System.Drawing.Size(100, 20);
             this.numLuminanceWidth.TabIndex = 18;
             this.numLuminanceWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminanceWidth.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb31
             // 
@@ -1004,6 +1022,7 @@
             this.numLuminanceLength.Size = new System.Drawing.Size(100, 20);
             this.numLuminanceLength.TabIndex = 15;
             this.numLuminanceLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLuminanceLength.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // tabPage4
             // 
@@ -1042,6 +1061,33 @@
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Calculate for the Illumination by Point-by-Point";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(12, 303);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(93, 13);
+            this.label48.TabIndex = 40;
+            this.label48.Text = "Illumination by 3D:";
+            // 
+            // lb55
+            // 
+            this.lb55.AutoSize = true;
+            this.lb55.Location = new System.Drawing.Point(228, 303);
+            this.lb55.Name = "lb55";
+            this.lb55.Size = new System.Drawing.Size(20, 13);
+            this.lb55.TabIndex = 39;
+            this.lb55.Text = "lux";
+            // 
+            // textThreeOutput
+            // 
+            this.textThreeOutput.Location = new System.Drawing.Point(122, 300);
+            this.textThreeOutput.Name = "textThreeOutput";
+            this.textThreeOutput.ReadOnly = true;
+            this.textThreeOutput.Size = new System.Drawing.Size(100, 20);
+            this.textThreeOutput.TabIndex = 38;
+            this.textThreeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label47
             // 
@@ -1106,6 +1152,7 @@
             this.numTwoLumens.Size = new System.Drawing.Size(100, 20);
             this.numTwoLumens.TabIndex = 29;
             this.numTwoLumens.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numTwoLumens.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // buttonTwoCalculaate
             // 
@@ -1148,6 +1195,7 @@
             this.numTwoHeight.Size = new System.Drawing.Size(100, 20);
             this.numTwoHeight.TabIndex = 21;
             this.numTwoHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numTwoHeight.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb42
             // 
@@ -1180,6 +1228,7 @@
             this.numTwoWidth.Size = new System.Drawing.Size(100, 20);
             this.numTwoWidth.TabIndex = 18;
             this.numTwoWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numTwoWidth.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb41
             // 
@@ -1306,6 +1355,7 @@
             this.numCavityLength.Size = new System.Drawing.Size(100, 20);
             this.numCavityLength.TabIndex = 45;
             this.numCavityLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numCavityLength.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb65
             // 
@@ -1338,6 +1388,7 @@
             this.numCavityCCH.Size = new System.Drawing.Size(100, 20);
             this.numCavityCCH.TabIndex = 41;
             this.numCavityCCH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numCavityCCH.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb64
             // 
@@ -1371,6 +1422,7 @@
             this.numCavityWPH.Size = new System.Drawing.Size(100, 20);
             this.numCavityWPH.TabIndex = 38;
             this.numCavityWPH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numCavityWPH.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // label49
             // 
@@ -1432,6 +1484,7 @@
             this.numCavityRH.Size = new System.Drawing.Size(100, 20);
             this.numCavityRH.TabIndex = 21;
             this.numCavityRH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numCavityRH.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // lb62
             // 
@@ -1464,6 +1517,7 @@
             this.numCavityWidth.Size = new System.Drawing.Size(100, 20);
             this.numCavityWidth.TabIndex = 18;
             this.numCavityWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numCavityWidth.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // button1
             // 
@@ -1477,18 +1531,18 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox1
+            // richtbHistory
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 19);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(315, 331);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.richtbHistory.Location = new System.Drawing.Point(6, 19);
+            this.richtbHistory.Name = "richtbHistory";
+            this.richtbHistory.ReadOnly = true;
+            this.richtbHistory.Size = new System.Drawing.Size(315, 331);
+            this.richtbHistory.TabIndex = 3;
+            this.richtbHistory.Text = "";
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.richTextBox1);
+            this.groupBox8.Controls.Add(this.richtbHistory);
             this.groupBox8.Location = new System.Drawing.Point(337, 60);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(327, 360);
@@ -1496,32 +1550,14 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "History";
             // 
-            // label48
+            // buttonHelp
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(12, 303);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(93, 13);
-            this.label48.TabIndex = 40;
-            this.label48.Text = "Illumination by 3D:";
-            // 
-            // lb55
-            // 
-            this.lb55.AutoSize = true;
-            this.lb55.Location = new System.Drawing.Point(228, 303);
-            this.lb55.Name = "lb55";
-            this.lb55.Size = new System.Drawing.Size(20, 13);
-            this.lb55.TabIndex = 39;
-            this.lb55.Text = "lux";
-            // 
-            // textThreeOutput
-            // 
-            this.textThreeOutput.Location = new System.Drawing.Point(122, 300);
-            this.textThreeOutput.Name = "textThreeOutput";
-            this.textThreeOutput.ReadOnly = true;
-            this.textThreeOutput.Size = new System.Drawing.Size(100, 20);
-            this.textThreeOutput.TabIndex = 38;
-            this.textThreeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonHelp.Location = new System.Drawing.Point(440, 21);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(218, 23);
+            this.buttonHelp.TabIndex = 5;
+            this.buttonHelp.Text = "Help";
+            this.buttonHelp.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
@@ -1529,6 +1565,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(684, 436);
+            this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
@@ -1703,11 +1740,12 @@
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.ComboBox comboCavity;
         private System.Windows.Forms.Label lb14;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richtbHistory;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label lb55;
         private System.Windows.Forms.TextBox textThreeOutput;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }
 

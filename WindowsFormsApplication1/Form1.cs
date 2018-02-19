@@ -17,6 +17,12 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        private void addToHistory(string result)
+        {
+
+            richtbHistory.Text = result + "\n\n" + richtbHistory.Text ;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             MessageBox.Show("This is a calculator designed to aid in Illumination Design.", "W E L C O M E");
@@ -55,6 +61,20 @@ namespace WindowsFormsApplication1
 
             textLuminairesOutput.Text = luminaires.ToString("#.##");
 
+            // add to history 
+
+            if (luminaires == 0)
+            {
+                string res = "Error \n";
+                addToHistory(res);
+            }
+            else
+            {
+                string res = "Number of Luminaires : " + textLuminairesOutput.Text + "   pieces \n";
+                addToHistory(res);
+            }
+
+
         }
 
         private void computeIllumination()
@@ -81,6 +101,20 @@ namespace WindowsFormsApplication1
             textIllumOutputInit.Text = initial.ToString("#.##");
             textIllumOutputMaintained.Text = maintained.ToString("#.##");
 
+            // add to history 
+
+            if (initial == 0)
+            {
+                string res = "Error \n";
+                addToHistory(res);
+            }
+            else
+            {
+                string res = "Initial Illumination : " + textIllumOutputInit.Text + "   " + lb24.Text + "\n";
+                res += "Maintained Illumination : " + textIllumOutputMaintained.Text + "   " + lb25.Text + "\n";
+                addToHistory(res);
+            }
+
         }
 
         private void computeLuminance()
@@ -105,6 +139,18 @@ namespace WindowsFormsApplication1
 
             textLuminanceOutput.Text = luminance.ToString("#.##");
 
+            // add to history 
+            if (luminance == 0)
+            {
+                string res = "Error \n";
+                addToHistory(res);
+            }
+            else
+            {
+                string res = "Luminance : " + textLuminanceOutput.Text + "   " + lb34.Text + "\n";
+                addToHistory(res);
+            }
+
         }
 
         private void computeTwo()
@@ -118,6 +164,13 @@ namespace WindowsFormsApplication1
             double i = (double)lumens / (double)fourpi;
             length = length / 2;
             width = width / 2;
+
+            if (height == 0)
+            {
+                length = 1;
+                height = 1;
+            } 
+
             var ratio = length / height;
             var atan = Math.Atan((double)ratio);
             double cosine = Math.Cos((double)atan);
@@ -137,6 +190,19 @@ namespace WindowsFormsApplication1
             double two = (double)top / (double)bottom;
 
             textTwoOutput.Text = two.ToString("#.##");
+
+            // add to history 
+
+            if (two == 0)
+            {
+                string res = "Error \n";
+                addToHistory(res);
+            }
+            else
+            {
+                string res = "2D Point-by-Point : " + textTwoOutput.Text + "   " + lb45.Text + "\n\n";
+                addToHistory(res);
+            }
 
         }
 
@@ -169,6 +235,19 @@ namespace WindowsFormsApplication1
             double three = (double)top / (double)bottom;
 
             textThreeOutput.Text = three.ToString("#.##");
+
+            // add to history 
+
+            if (three == 0)
+            {
+                string res = "Error \n";
+                addToHistory(res);
+            }
+            else
+            {
+                string res = "3D Point-by-Point : " + textThreeOutput.Text + "   " + lb55.Text + "\n\n";
+                addToHistory(res);
+            }
 
         }
 
@@ -235,6 +314,41 @@ namespace WindowsFormsApplication1
 
             textCavityOutput.Text = cavity.ToString("#.##");
 
+            // add to history 
+            
+            if (cavity == 0)
+            {
+                string res = "Error \n";
+                addToHistory(res);
+            }
+            else
+            {
+                if (comboCavity.SelectedIndex == 0)
+                {
+                    string res = "Cavity Ratio : " + textCavityOutput.Text + "\n\n";
+                    addToHistory(res);
+                }
+                if (comboCavity.SelectedIndex == 1)
+                {
+                    string res = "Room Cavity Ratio : " + textCavityOutput.Text + "\n\n";
+                    addToHistory(res);
+                }
+                if (comboCavity.SelectedIndex == 2)
+                {
+                    string res = "Ceiling Cavity Ratio : " + textCavityOutput.Text + "\n\n";
+                    addToHistory(res);
+                }
+                if (comboCavity.SelectedIndex == 3)
+                {
+                    string res = "Floor Cavity Ratio : " + textCavityOutput.Text + "\n\n";
+                    addToHistory(res);
+                }
+                if (comboCavity.SelectedIndex == 4)
+                {
+                    string res = "Room Index : " + textCavityOutput.Text + "\n\n";
+                    addToHistory(res);
+                }
+            }
         }
         
         private void buttonIllumCalculate_Click(object sender, EventArgs e)
@@ -440,5 +554,15 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void numIllumLength_Enter(object sender, EventArgs e)
+        {
+            //numIllumLength.Select(0, numIllumLength.Text.Length);
+            numericUpdownSelectAll((NumericUpDown)sender);
+        }
+
+        private void numericUpdownSelectAll(NumericUpDown a)
+        {
+            a.Select(0, a.Text.Length);
+        }
     }
 }

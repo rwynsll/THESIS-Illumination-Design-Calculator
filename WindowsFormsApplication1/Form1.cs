@@ -563,5 +563,15 @@ namespace WindowsFormsApplication1
         {
             a.Select(0, a.Text.Length);
         }
+        
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            this.Width = 1000;
+        }
+
+        private void buttonHelpHide_Click(object sender, EventArgs e)
+        {
+            this.Width = 700;
+        }
     }
 }

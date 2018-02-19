@@ -144,6 +144,10 @@
             this.richtbHistory = new System.Windows.Forms.RichTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.buttonHelp = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.buttonHelpChoose = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonHelpHide = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -183,6 +187,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCavityRH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCavityWidth)).BeginInit();
             this.groupBox8.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -201,7 +206,7 @@
             // 
             this.rdbMetric.AutoSize = true;
             this.rdbMetric.Checked = true;
-            this.rdbMetric.Location = new System.Drawing.Point(43, 20);
+            this.rdbMetric.Location = new System.Drawing.Point(69, 20);
             this.rdbMetric.Name = "rdbMetric";
             this.rdbMetric.Size = new System.Drawing.Size(54, 17);
             this.rdbMetric.TabIndex = 1;
@@ -213,7 +218,7 @@
             // rdbEnglish
             // 
             this.rdbEnglish.AutoSize = true;
-            this.rdbEnglish.Location = new System.Drawing.Point(140, 20);
+            this.rdbEnglish.Location = new System.Drawing.Point(187, 20);
             this.rdbEnglish.Name = "rdbEnglish";
             this.rdbEnglish.Size = new System.Drawing.Size(59, 17);
             this.rdbEnglish.TabIndex = 0;
@@ -1524,7 +1529,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.button1.Location = new System.Drawing.Point(337, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 45);
+            this.button1.Size = new System.Drawing.Size(167, 32);
             this.button1.TabIndex = 2;
             this.button1.Text = "Basic Calculator";
             this.button1.UseVisualStyleBackColor = false;
@@ -1535,35 +1540,75 @@
             this.richtbHistory.Location = new System.Drawing.Point(6, 19);
             this.richtbHistory.Name = "richtbHistory";
             this.richtbHistory.ReadOnly = true;
-            this.richtbHistory.Size = new System.Drawing.Size(315, 331);
+            this.richtbHistory.Size = new System.Drawing.Size(315, 347);
             this.richtbHistory.TabIndex = 3;
             this.richtbHistory.Text = "";
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.richtbHistory);
-            this.groupBox8.Location = new System.Drawing.Point(337, 60);
+            this.groupBox8.Location = new System.Drawing.Point(337, 47);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(327, 360);
+            this.groupBox8.Size = new System.Drawing.Size(327, 373);
             this.groupBox8.TabIndex = 4;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "History";
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Location = new System.Drawing.Point(440, 21);
+            this.buttonHelp.Location = new System.Drawing.Point(510, 9);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(218, 23);
+            this.buttonHelp.Size = new System.Drawing.Size(148, 32);
             this.buttonHelp.TabIndex = 5;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(28, 10);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(206, 21);
+            this.comboBox1.TabIndex = 6;
+            // 
+            // buttonHelpChoose
+            // 
+            this.buttonHelpChoose.Location = new System.Drawing.Point(237, 10);
+            this.buttonHelpChoose.Name = "buttonHelpChoose";
+            this.buttonHelpChoose.Size = new System.Drawing.Size(43, 23);
+            this.buttonHelpChoose.TabIndex = 7;
+            this.buttonHelpChoose.Text = "Show";
+            this.buttonHelpChoose.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.buttonHelpHide);
+            this.groupBox6.Controls.Add(this.buttonHelpChoose);
+            this.groupBox6.Controls.Add(this.comboBox1);
+            this.groupBox6.Location = new System.Drawing.Point(686, 4);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(286, 416);
+            this.groupBox6.TabIndex = 8;
+            this.groupBox6.TabStop = false;
+            // 
+            // buttonHelpHide
+            // 
+            this.buttonHelpHide.Location = new System.Drawing.Point(6, 10);
+            this.buttonHelpHide.Name = "buttonHelpHide";
+            this.buttonHelpHide.Size = new System.Drawing.Size(16, 21);
+            this.buttonHelpHide.TabIndex = 8;
+            this.buttonHelpHide.Text = "<";
+            this.buttonHelpHide.UseVisualStyleBackColor = true;
+            this.buttonHelpHide.Click += new System.EventHandler(this.buttonHelpHide_Click);
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(684, 436);
+            this.ClientSize = new System.Drawing.Size(984, 436);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.button1);
@@ -1623,6 +1668,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCavityRH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCavityWidth)).EndInit();
             this.groupBox8.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1745,6 +1791,10 @@
         private System.Windows.Forms.Label lb55;
         private System.Windows.Forms.TextBox textThreeOutput;
         private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button buttonHelpChoose;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button buttonHelpHide;
     }
 }
 

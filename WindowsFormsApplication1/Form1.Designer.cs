@@ -233,7 +233,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(310, 360);
             this.tabControl1.TabIndex = 1;
-            //this.tabControl1.Enter += new System.EventHandler(this.numIllumLength_Enter);
             // 
             // tabPage1
             // 
@@ -279,7 +278,7 @@
             // lb14
             // 
             this.lb14.AutoSize = true;
-            this.lb14.Location = new System.Drawing.Point(228, 140);
+            this.lb14.Location = new System.Drawing.Point(228, 135);
             this.lb14.Name = "lb14";
             this.lb14.Size = new System.Drawing.Size(20, 13);
             this.lb14.TabIndex = 36;

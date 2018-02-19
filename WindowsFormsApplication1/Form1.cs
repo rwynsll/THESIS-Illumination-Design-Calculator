@@ -469,8 +469,7 @@ namespace WindowsFormsApplication1
             lb42.Text = "feet";
             lb43.Text = "feet";
             lb45.Text = "fc";
-
-            lb55.Text = "feet";
+            lb55.Text = "fc";
             lb61.Text = "feet";
             lb62.Text = "feet";
             lb63.Text = "feet";
@@ -520,7 +519,7 @@ namespace WindowsFormsApplication1
             lb42.Text = "meters";
             lb43.Text = "meters";
             lb45.Text = "lux";
-            lb55.Text = "meters";
+            lb55.Text = "lux";
             lb61.Text = "meters";
             lb62.Text = "meters";
             lb63.Text = "meters";

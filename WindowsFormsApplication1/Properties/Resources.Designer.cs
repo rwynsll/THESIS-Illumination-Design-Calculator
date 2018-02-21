@@ -63,6 +63,46 @@ namespace Illumination_Design_Calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2D_ptp {
+            get {
+                object obj = ResourceManager.GetObject("2D ptp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3D_ptp {
+            get {
+                object obj = ResourceManager.GetObject("3D ptp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cavity_Ratio {
+            get {
+                object obj = ResourceManager.GetObject("Cavity Ratio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Illumination {
+            get {
+                object obj = ResourceManager.GetObject("Illumination", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pictureRoomIndex1 {
             get {
                 object obj = ResourceManager.GetObject("pictureRoomIndex1", resourceCulture);
@@ -186,6 +226,26 @@ namespace Illumination_Design_Calculator.Properties {
         internal static System.Drawing.Bitmap pictureSpacingLayout22 {
             get {
                 object obj = ResourceManager.GetObject("pictureSpacingLayout22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RoomIndex {
+            get {
+                object obj = ResourceManager.GetObject("RoomIndex", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RoomIndex1 {
+            get {
+                object obj = ResourceManager.GetObject("RoomIndex1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

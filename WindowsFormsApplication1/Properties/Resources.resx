@@ -121,40 +121,58 @@
   <data name="pictureRoomIndex21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureRoomIndex21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pictureSpacingLayout2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureSpacingLayout2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictureSpacing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureSpacing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictureSpacingLayout11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureSpacingLayout11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictureRoomIndex2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureRoomIndex2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pictureSpacingLayout1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureSpacingLayout1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pictureRoomIndex1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureRoomIndex1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictureSpacing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureSpacing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pictureRoomIndex2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureRoomIndex2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictureRoomIndex11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureRoomIndex11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pictureRoomIndex12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pictureRoomIndex12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Illumination" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Illumination.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pictureSpacingLayout22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureSpacingLayout22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pictureSpacingLayout2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureSpacingLayout2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pictureRoomIndex11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureRoomIndex11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pictureSpacingLayout11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureSpacingLayout11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pictureSpacingLayout21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureSpacingLayout21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomIndex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomIndex.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pictureRoomIndex12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureRoomIndex12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pictureSpacingLayout12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureSpacingLayout12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3D ptp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3D ptp.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pictureRoomIndex1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pictureRoomIndex1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2D ptp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2D ptp.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pictureRoomIndex22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureRoomIndex22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomIndex1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomIndex1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cavity Ratio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cavity Ratio.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

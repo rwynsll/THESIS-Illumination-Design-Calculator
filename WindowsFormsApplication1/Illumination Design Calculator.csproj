@@ -166,6 +166,24 @@
   <ItemGroup>
     <None Include="Resources\pictureRoomIndex22.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Illumination.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2D ptp.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D ptp.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomIndex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomIndex1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cavity Ratio.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

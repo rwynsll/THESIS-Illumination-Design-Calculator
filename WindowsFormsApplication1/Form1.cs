@@ -591,26 +591,123 @@ namespace WindowsFormsApplication1
 
         private void buttonHelpChoose_Click(object sender, EventArgs e)
         {
+            
             if (comboHelp.SelectedIndex == 0)
+            {
+                rtbHelp.Text = "          The average illuminance (E) over a reference surface can be calculated from the lumen method formula.\n\n\n\n\n\n\n\n\n" +
+                    "Maintenance Factor depends on two things:\n" +
+                    "                    a) the manufacturers \n\n" +
+                    "                    b) The environment in which the luminaire is built on. (Very Clean, Clean, Normal, Dirty) \n\n" +
+                    "Utilization factors are in practice, only calculated for general lighting systems with regular arrays of luminaires " +
+                    "and for three main room surfaces. The highest of these surfaces, the C surface (for ceiling cavity), is an imaginary horizontal plane " +
+                    "at the level of the luminaires having a reflectance equal to that of the ceiling cavity. The lowest surface, the F surface (for floor Cavity), " +
+                    "is a horizontal plane at normal working height (i.e. table height), which is often assumed to be 0.85 m above the floor. " +
+                    "The middle surface, the W surface (for walls), consists of all the walls between the C and F planes.";
+                pictureLumens.Visible = true;
+                pictureLumens.SizeMode = PictureBoxSizeMode.StretchImage;
+                picturePtpHide();
+                pictureCR.Visible = false;
+                pictureRI.Visible = false;
+                pictureSpacing.Visible = false;
+                pictureSpacingHide();
+                pictureRoomHide();
+                buttonRoomHide();
+                buttonSpaceHide();                
+            }
+            
+            if (comboHelp.SelectedIndex == 1)
+            {
+                rtbHelp.Text = "The Point-by-point Method\n\n" + "          " + 
+                    "The illuminance values for a uniformity check are calculated using the point-by-point method." +
+                    " The inverse square law and cosine law are used to calculate illuminance at a point from intensity data.";
+                picture2D.Visible = true;
+                picture2D.SizeMode = PictureBoxSizeMode.StretchImage;
+                picture3D.SizeMode = PictureBoxSizeMode.StretchImage;
+                buttonPtpShow();
+                pictureCR.Visible = false;
+                pictureRI.Visible = false;
+                pictureLumens.Visible = false;
+                pictureSpacing.Visible = false;
+                pictureSpacingHide();
+                pictureRoomHide();
+                buttonSpaceHide();
+                buttonRoomHide();
+            }
+            
+            if (comboHelp.SelectedIndex == 2)
+            {
+                rtbHelp.Text = "          " + "The room geometry is accounted for in cavity ratios or CR.The formula for room cavity ratio is:" + 
+                    "\n\n\n\n\n\n\n\n\n\n" + "CR equals 5 times Height x the sum of length plus width divided by the result of length times width. " +
+                    "          Cavity ratios can be calculated for the ceiling, room and floor by using the appropriate cavity dimensions." +
+                    "For a given space, calculate the CR and then use the fixture manufacturer's CU table to select the appropriate CU. \n\n\n" +
+                    "Example: \n Let's calculate the CR for a room with the dimensions of Height=6, Length=12, and Width=10.\n\n"  +
+                    "12x10 equals120. \n So CR = 5x6x120 or 660 divided by 120. \n The result is a Cavity Ratio of 5.5.";
+                pictureCR.Visible = true;
+                pictureCR.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRI.Visible = false;
+                pictureSpacing.Visible = false;
+                pictureLumens.Visible = false;
+                pictureSpacingHide();
+                pictureRoomHide();
+                picturePtpHide();
+                buttonRoomHide();
+                buttonSpaceHide();
+            }
+            
+            if (comboHelp.SelectedIndex == 3)
+            {
+                rtbHelp.Text = "          " + "ROOM INDEX (RI) is the ratio of room plan area to half the wall area between the working and luminaire planes." +
+                    " \n\n\n\n\n\n\n\n\n\n" + "where:\n" + "          L = length of the room \n" + "          W = width of the room \n" +
+                    "          Hm = mounting height, vertical distance between the floor and the luminaire";
+                pictureRI.Visible = true;
+                pictureRI.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureCR.Visible = false;
+                pictureSpacing.Visible = false;
+                pictureLumens.Visible = false;
+                pictureSpacingHide();
+                pictureRoomHide();
+                picturePtpHide();
+                buttonRoomHide();
+                buttonSpaceHide();
+            }
+
+            if (comboHelp.SelectedIndex == 4)
+            {
+                rtbHelp.Text = "          ";
+                pictureRoomIndex11.Visible = true;
+                pictureSpacing.Visible = false;
+                pictureCR.Visible = false;
+                pictureRI.Visible = false;
+                pictureSpacingHide();
+                buttonRoomShow();
+                buttonSpaceHide();
+                pictureRoomIndex11.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex12.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex21.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex22.SizeMode = PictureBoxSizeMode.StretchImage;
+                picturePtpHide();
+                pictureLumens.Visible = false;
+            }
+
+            if (comboHelp.SelectedIndex == 5)
             {
                 rtbHelp.Text = "          " +
                     "Spacing to Height ratio (SHR or S/Hm) is defined as the ratio of the distance between" +
                     " adjacent luminaires (centre to centre), to their height above the working plane." +
                     " For a rectangular arrangement of luminaires and by approximation,";
                 pictureSpacing.Visible = true;
-                pictureSpacingLayout11.Visible = false;
-                pictureSpacingLayout12.Visible = false;
-                pictureSpacingLayout21.Visible = false;
-                pictureSpacingLayout22.Visible = false;
+                pictureSpacingHide();
                 pictureSpacing.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex11.Visible = false;
-                pictureRoomIndex12.Visible = false;
-                pictureRoomIndex21.Visible = false;
-                pictureRoomIndex22.Visible = false;
+                pictureRoomHide();
                 buttonSpaceHide();
                 buttonRoomHide();
+                picturePtpHide();
+                pictureLumens.Visible = false;
+                pictureCR.Visible = false;
+                pictureRI.Visible = false;
             }
-            if (comboHelp.SelectedIndex == 1)
+
+            if (comboHelp.SelectedIndex == 6)
             {
                 rtbHelp.Text = "          " +
                     "LUMINAIRE SPACING depends upon the customer and the designer itself." +
@@ -625,29 +722,14 @@ namespace WindowsFormsApplication1
                 pictureSpacingLayout12.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureSpacingLayout21.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureSpacingLayout22.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex11.Visible = false;
-                pictureRoomIndex12.Visible = false;
-                pictureRoomIndex21.Visible = false;
-                pictureRoomIndex22.Visible = false;
-
+                pictureRoomHide();
+                picturePtpHide();
+                pictureLumens.Visible = false;
+                pictureCR.Visible = false;
+                pictureRI.Visible = false;
             }
-            if (comboHelp.SelectedIndex == 2)
-            {
-                rtbHelp.Text = "          ";
-                pictureRoomIndex11.Visible = true;
-                pictureSpacing.Visible = false;
-                pictureSpacingLayout11.Visible = false;
-                pictureSpacingLayout12.Visible = false;
-                pictureSpacingLayout21.Visible = false;
-                pictureSpacingLayout22.Visible = false;
-                buttonRoomShow();
-                buttonSpaceHide();
-                pictureRoomIndex11.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex12.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex21.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex22.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-            if (comboHelp.SelectedIndex == 3)
+           
+            if (comboHelp.SelectedIndex == 7)
             {
                 rtbHelp.Text = "          \n" + "TYPES OF LUMINAIRES" +
                     "(this affects the mounting height for the spacing formula, heights depends on distance from floor to luminaire) \n\n" +
@@ -672,16 +754,14 @@ namespace WindowsFormsApplication1
                     " sources of light in a room. Most lamps direct light downward, with the exception of a torchiere, which is a floor lamp that" +
                     " directs its light upward. Lamps are often used as task lights, particularly for reading, but can also provide ambient light. \n\n";
                 pictureSpacing.Visible = false;
-                pictureSpacingLayout11.Visible = false;
-                pictureSpacingLayout12.Visible = false;
-                pictureSpacingLayout21.Visible = false;
-                pictureSpacingLayout22.Visible = false;
-                pictureRoomIndex11.Visible = false;
-                pictureRoomIndex12.Visible = false;
-                pictureRoomIndex21.Visible = false;
-                pictureRoomIndex22.Visible = false;
+                pictureSpacingHide();
+                pictureRoomHide();
                 buttonSpaceHide();
                 buttonRoomHide();
+                picturePtpHide();
+                pictureLumens.Visible = false;
+                pictureCR.Visible = false;
+                pictureRI.Visible = false;
             }
         }
 
@@ -776,6 +856,47 @@ namespace WindowsFormsApplication1
             pictureRoomIndex12.Visible = false;
             pictureRoomIndex21.Visible = false;
             pictureRoomIndex22.Visible = true;
+        }
+
+        private void pictureSpacingHide()
+        {
+            pictureSpacingLayout11.Visible = false;
+            pictureSpacingLayout12.Visible = false;
+            pictureSpacingLayout21.Visible = false;
+            pictureSpacingLayout22.Visible = false;
+        }
+        
+        private void pictureRoomHide()
+        {
+            pictureRoomIndex11.Visible = false;
+            pictureRoomIndex12.Visible = false;
+            pictureRoomIndex21.Visible = false;
+            pictureRoomIndex22.Visible = false;
+        }
+
+        private void picturePtpHide()
+        {
+            picture2D.Visible = false;
+            picture3D.Visible = false;
+            button2D.Visible = false;
+            button3D.Visible = false;
+        }
+        private void buttonPtpShow()
+        {
+            button2D.Visible = true;
+            button3D.Visible = true;
+        }
+
+        private void button2D_Click(object sender, EventArgs e)
+        {
+            picture2D.Visible = true;
+            picture3D.Visible = false;
+        }
+
+        private void button3D_Click(object sender, EventArgs e)
+        {
+            picture2D.Visible = false;
+            picture3D.Visible = true;
         }
 
     }

@@ -147,17 +147,25 @@
             this.comboHelp = new System.Windows.Forms.ComboBox();
             this.buttonHelpChoose = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.buttonHelpHide = new System.Windows.Forms.Button();
             this.rtbHelp = new System.Windows.Forms.RichTextBox();
+            this.buttonHelpHide = new System.Windows.Forms.Button();
+            this.pictureSpacingLayout11 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacing = new System.Windows.Forms.PictureBox();
+            this.pictureRoomIndex22 = new System.Windows.Forms.PictureBox();
+            this.pictureRoomIndex21 = new System.Windows.Forms.PictureBox();
+            this.pictureRoomIndex12 = new System.Windows.Forms.PictureBox();
+            this.pictureRoomIndex11 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacingLayout22 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacingLayout21 = new System.Windows.Forms.PictureBox();
+            this.pictureSpacingLayout12 = new System.Windows.Forms.PictureBox();
             this.buttonSpacingLayout1 = new System.Windows.Forms.Button();
             this.buttonSpacingLayout2 = new System.Windows.Forms.Button();
-            this.pictureRoomIndex2 = new System.Windows.Forms.PictureBox();
-            this.pictureRoomIndex1 = new System.Windows.Forms.PictureBox();
-            this.pictureSpacingLayout2 = new System.Windows.Forms.PictureBox();
-            this.pictureSpacingLayout1 = new System.Windows.Forms.PictureBox();
-            this.pictureSpacing = new System.Windows.Forms.PictureBox();
-            this.buttonRoom1 = new System.Windows.Forms.Button();
-            this.buttonRoom2 = new System.Windows.Forms.Button();
+            this.buttonSpacingLayout3 = new System.Windows.Forms.Button();
+            this.buttonSpacingLayout4 = new System.Windows.Forms.Button();
+            this.buttonRoomIndex4 = new System.Windows.Forms.Button();
+            this.buttonRoomIndex3 = new System.Windows.Forms.Button();
+            this.buttonRoomIndex2 = new System.Windows.Forms.Button();
+            this.buttonRoomIndex1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -198,11 +206,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCavityWidth)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSpacing)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout12)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -1604,15 +1616,23 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.buttonRoom2);
-            this.groupBox6.Controls.Add(this.buttonRoom1);
-            this.groupBox6.Controls.Add(this.pictureRoomIndex2);
-            this.groupBox6.Controls.Add(this.pictureRoomIndex1);
+            this.groupBox6.Controls.Add(this.pictureRoomIndex12);
+            this.groupBox6.Controls.Add(this.pictureRoomIndex21);
+            this.groupBox6.Controls.Add(this.pictureRoomIndex22);
+            this.groupBox6.Controls.Add(this.buttonRoomIndex4);
+            this.groupBox6.Controls.Add(this.buttonRoomIndex3);
+            this.groupBox6.Controls.Add(this.buttonRoomIndex2);
+            this.groupBox6.Controls.Add(this.pictureRoomIndex11);
+            this.groupBox6.Controls.Add(this.buttonRoomIndex1);
+            this.groupBox6.Controls.Add(this.buttonSpacingLayout4);
+            this.groupBox6.Controls.Add(this.buttonSpacingLayout3);
             this.groupBox6.Controls.Add(this.buttonSpacingLayout2);
             this.groupBox6.Controls.Add(this.buttonSpacingLayout1);
-            this.groupBox6.Controls.Add(this.pictureSpacingLayout2);
-            this.groupBox6.Controls.Add(this.pictureSpacingLayout1);
+            this.groupBox6.Controls.Add(this.pictureSpacingLayout22);
+            this.groupBox6.Controls.Add(this.pictureSpacingLayout11);
+            this.groupBox6.Controls.Add(this.pictureSpacingLayout21);
             this.groupBox6.Controls.Add(this.pictureSpacing);
+            this.groupBox6.Controls.Add(this.pictureSpacingLayout12);
             this.groupBox6.Controls.Add(this.rtbHelp);
             this.groupBox6.Controls.Add(this.buttonHelpHide);
             this.groupBox6.Controls.Add(this.buttonHelpChoose);
@@ -1622,16 +1642,6 @@
             this.groupBox6.Size = new System.Drawing.Size(386, 416);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
-            // 
-            // buttonHelpHide
-            // 
-            this.buttonHelpHide.Location = new System.Drawing.Point(6, 10);
-            this.buttonHelpHide.Name = "buttonHelpHide";
-            this.buttonHelpHide.Size = new System.Drawing.Size(16, 21);
-            this.buttonHelpHide.TabIndex = 8;
-            this.buttonHelpHide.Text = "<";
-            this.buttonHelpHide.UseVisualStyleBackColor = true;
-            this.buttonHelpHide.Click += new System.EventHandler(this.buttonHelpHide_Click);
             // 
             // rtbHelp
             // 
@@ -1644,12 +1654,112 @@
             this.rtbHelp.TabIndex = 9;
             this.rtbHelp.Text = "";
             // 
+            // buttonHelpHide
+            // 
+            this.buttonHelpHide.Location = new System.Drawing.Point(6, 10);
+            this.buttonHelpHide.Name = "buttonHelpHide";
+            this.buttonHelpHide.Size = new System.Drawing.Size(16, 21);
+            this.buttonHelpHide.TabIndex = 8;
+            this.buttonHelpHide.Text = "<";
+            this.buttonHelpHide.UseVisualStyleBackColor = true;
+            this.buttonHelpHide.Click += new System.EventHandler(this.buttonHelpHide_Click);
+            // 
+            // pictureSpacingLayout11
+            // 
+            this.pictureSpacingLayout11.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout11;
+            this.pictureSpacingLayout11.Location = new System.Drawing.Point(27, 143);
+            this.pictureSpacingLayout11.Name = "pictureSpacingLayout11";
+            this.pictureSpacingLayout11.Size = new System.Drawing.Size(335, 182);
+            this.pictureSpacingLayout11.TabIndex = 11;
+            this.pictureSpacingLayout11.TabStop = false;
+            this.pictureSpacingLayout11.Visible = false;
+            // 
+            // pictureSpacing
+            // 
+            this.pictureSpacing.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacing;
+            this.pictureSpacing.Location = new System.Drawing.Point(76, 235);
+            this.pictureSpacing.Name = "pictureSpacing";
+            this.pictureSpacing.Size = new System.Drawing.Size(247, 105);
+            this.pictureSpacing.TabIndex = 10;
+            this.pictureSpacing.TabStop = false;
+            this.pictureSpacing.Visible = false;
+            // 
+            // pictureRoomIndex22
+            // 
+            this.pictureRoomIndex22.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex22;
+            this.pictureRoomIndex22.Location = new System.Drawing.Point(20, 64);
+            this.pictureRoomIndex22.Name = "pictureRoomIndex22";
+            this.pictureRoomIndex22.Size = new System.Drawing.Size(350, 276);
+            this.pictureRoomIndex22.TabIndex = 17;
+            this.pictureRoomIndex22.TabStop = false;
+            this.pictureRoomIndex22.Visible = false;
+            // 
+            // pictureRoomIndex21
+            // 
+            this.pictureRoomIndex21.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex21;
+            this.pictureRoomIndex21.Location = new System.Drawing.Point(20, 64);
+            this.pictureRoomIndex21.Name = "pictureRoomIndex21";
+            this.pictureRoomIndex21.Size = new System.Drawing.Size(350, 276);
+            this.pictureRoomIndex21.TabIndex = 16;
+            this.pictureRoomIndex21.TabStop = false;
+            this.pictureRoomIndex21.Visible = false;
+            // 
+            // pictureRoomIndex12
+            // 
+            this.pictureRoomIndex12.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex12;
+            this.pictureRoomIndex12.Location = new System.Drawing.Point(20, 64);
+            this.pictureRoomIndex12.Name = "pictureRoomIndex12";
+            this.pictureRoomIndex12.Size = new System.Drawing.Size(350, 240);
+            this.pictureRoomIndex12.TabIndex = 15;
+            this.pictureRoomIndex12.TabStop = false;
+            this.pictureRoomIndex12.Visible = false;
+            // 
+            // pictureRoomIndex11
+            // 
+            this.pictureRoomIndex11.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex11;
+            this.pictureRoomIndex11.Location = new System.Drawing.Point(20, 64);
+            this.pictureRoomIndex11.Name = "pictureRoomIndex11";
+            this.pictureRoomIndex11.Size = new System.Drawing.Size(350, 276);
+            this.pictureRoomIndex11.TabIndex = 12;
+            this.pictureRoomIndex11.TabStop = false;
+            this.pictureRoomIndex11.Visible = false;
+            // 
+            // pictureSpacingLayout22
+            // 
+            this.pictureSpacingLayout22.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout22;
+            this.pictureSpacingLayout22.Location = new System.Drawing.Point(28, 143);
+            this.pictureSpacingLayout22.Name = "pictureSpacingLayout22";
+            this.pictureSpacingLayout22.Size = new System.Drawing.Size(335, 182);
+            this.pictureSpacingLayout22.TabIndex = 14;
+            this.pictureSpacingLayout22.TabStop = false;
+            this.pictureSpacingLayout22.Visible = false;
+            // 
+            // pictureSpacingLayout21
+            // 
+            this.pictureSpacingLayout21.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout21;
+            this.pictureSpacingLayout21.Location = new System.Drawing.Point(28, 143);
+            this.pictureSpacingLayout21.Name = "pictureSpacingLayout21";
+            this.pictureSpacingLayout21.Size = new System.Drawing.Size(335, 182);
+            this.pictureSpacingLayout21.TabIndex = 13;
+            this.pictureSpacingLayout21.TabStop = false;
+            this.pictureSpacingLayout21.Visible = false;
+            // 
+            // pictureSpacingLayout12
+            // 
+            this.pictureSpacingLayout12.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout12;
+            this.pictureSpacingLayout12.Location = new System.Drawing.Point(28, 143);
+            this.pictureSpacingLayout12.Name = "pictureSpacingLayout12";
+            this.pictureSpacingLayout12.Size = new System.Drawing.Size(335, 182);
+            this.pictureSpacingLayout12.TabIndex = 12;
+            this.pictureSpacingLayout12.TabStop = false;
+            this.pictureSpacingLayout12.Visible = false;
+            // 
             // buttonSpacingLayout1
             // 
-            this.buttonSpacingLayout1.Location = new System.Drawing.Point(305, 290);
+            this.buttonSpacingLayout1.Location = new System.Drawing.Point(40, 358);
             this.buttonSpacingLayout1.Name = "buttonSpacingLayout1";
-            this.buttonSpacingLayout1.Size = new System.Drawing.Size(50, 50);
-            this.buttonSpacingLayout1.TabIndex = 13;
+            this.buttonSpacingLayout1.Size = new System.Drawing.Size(75, 23);
+            this.buttonSpacingLayout1.TabIndex = 12;
             this.buttonSpacingLayout1.Text = "part 1";
             this.buttonSpacingLayout1.UseVisualStyleBackColor = true;
             this.buttonSpacingLayout1.Visible = false;
@@ -1657,93 +1767,87 @@
             // 
             // buttonSpacingLayout2
             // 
-            this.buttonSpacingLayout2.Location = new System.Drawing.Point(305, 351);
+            this.buttonSpacingLayout2.Location = new System.Drawing.Point(121, 358);
             this.buttonSpacingLayout2.Name = "buttonSpacingLayout2";
-            this.buttonSpacingLayout2.Size = new System.Drawing.Size(50, 50);
-            this.buttonSpacingLayout2.TabIndex = 14;
+            this.buttonSpacingLayout2.Size = new System.Drawing.Size(75, 23);
+            this.buttonSpacingLayout2.TabIndex = 13;
             this.buttonSpacingLayout2.Text = "part 2";
             this.buttonSpacingLayout2.UseVisualStyleBackColor = true;
             this.buttonSpacingLayout2.Visible = false;
             this.buttonSpacingLayout2.Click += new System.EventHandler(this.buttonSpacingLayout2_Click);
             // 
-            // pictureRoomIndex2
+            // buttonSpacingLayout3
             // 
-            this.pictureRoomIndex2.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex2;
-            this.pictureRoomIndex2.Location = new System.Drawing.Point(14, 45);
-            this.pictureRoomIndex2.Name = "pictureRoomIndex2";
-            this.pictureRoomIndex2.Size = new System.Drawing.Size(268, 356);
-            this.pictureRoomIndex2.TabIndex = 16;
-            this.pictureRoomIndex2.TabStop = false;
-            this.pictureRoomIndex2.Visible = false;
+            this.buttonSpacingLayout3.Location = new System.Drawing.Point(202, 358);
+            this.buttonSpacingLayout3.Name = "buttonSpacingLayout3";
+            this.buttonSpacingLayout3.Size = new System.Drawing.Size(75, 23);
+            this.buttonSpacingLayout3.TabIndex = 14;
+            this.buttonSpacingLayout3.Text = "part 3";
+            this.buttonSpacingLayout3.UseVisualStyleBackColor = true;
+            this.buttonSpacingLayout3.Visible = false;
+            this.buttonSpacingLayout3.Click += new System.EventHandler(this.buttonSpacingLayout3_Click);
             // 
-            // pictureRoomIndex1
+            // buttonSpacingLayout4
             // 
-            this.pictureRoomIndex1.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureRoomIndex1;
-            this.pictureRoomIndex1.Location = new System.Drawing.Point(14, 45);
-            this.pictureRoomIndex1.Name = "pictureRoomIndex1";
-            this.pictureRoomIndex1.Size = new System.Drawing.Size(268, 356);
-            this.pictureRoomIndex1.TabIndex = 15;
-            this.pictureRoomIndex1.TabStop = false;
-            this.pictureRoomIndex1.Visible = false;
+            this.buttonSpacingLayout4.Location = new System.Drawing.Point(283, 358);
+            this.buttonSpacingLayout4.Name = "buttonSpacingLayout4";
+            this.buttonSpacingLayout4.Size = new System.Drawing.Size(75, 23);
+            this.buttonSpacingLayout4.TabIndex = 15;
+            this.buttonSpacingLayout4.Text = "part 4";
+            this.buttonSpacingLayout4.UseVisualStyleBackColor = true;
+            this.buttonSpacingLayout4.Visible = false;
+            this.buttonSpacingLayout4.Click += new System.EventHandler(this.buttonSpacingLayout4_Click);
             // 
-            // pictureSpacingLayout2
+            // buttonRoomIndex4
             // 
-            this.pictureSpacingLayout2.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout2;
-            this.pictureSpacingLayout2.Location = new System.Drawing.Point(38, 136);
-            this.pictureSpacingLayout2.Name = "pictureSpacingLayout2";
-            this.pictureSpacingLayout2.Size = new System.Drawing.Size(244, 263);
-            this.pictureSpacingLayout2.TabIndex = 12;
-            this.pictureSpacingLayout2.TabStop = false;
-            this.pictureSpacingLayout2.Visible = false;
+            this.buttonRoomIndex4.Location = new System.Drawing.Point(283, 358);
+            this.buttonRoomIndex4.Name = "buttonRoomIndex4";
+            this.buttonRoomIndex4.Size = new System.Drawing.Size(75, 23);
+            this.buttonRoomIndex4.TabIndex = 19;
+            this.buttonRoomIndex4.Text = "part 4";
+            this.buttonRoomIndex4.UseVisualStyleBackColor = true;
+            this.buttonRoomIndex4.Visible = false;
+            this.buttonRoomIndex4.Click += new System.EventHandler(this.buttonRoomIndex4_Click);
             // 
-            // pictureSpacingLayout1
+            // buttonRoomIndex3
             // 
-            this.pictureSpacingLayout1.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacingLayout1;
-            this.pictureSpacingLayout1.Location = new System.Drawing.Point(38, 136);
-            this.pictureSpacingLayout1.Name = "pictureSpacingLayout1";
-            this.pictureSpacingLayout1.Size = new System.Drawing.Size(244, 263);
-            this.pictureSpacingLayout1.TabIndex = 11;
-            this.pictureSpacingLayout1.TabStop = false;
-            this.pictureSpacingLayout1.Visible = false;
+            this.buttonRoomIndex3.Location = new System.Drawing.Point(202, 358);
+            this.buttonRoomIndex3.Name = "buttonRoomIndex3";
+            this.buttonRoomIndex3.Size = new System.Drawing.Size(75, 23);
+            this.buttonRoomIndex3.TabIndex = 18;
+            this.buttonRoomIndex3.Text = "part 3";
+            this.buttonRoomIndex3.UseVisualStyleBackColor = true;
+            this.buttonRoomIndex3.Visible = false;
+            this.buttonRoomIndex3.Click += new System.EventHandler(this.buttonRoomIndex3_Click);
             // 
-            // pictureSpacing
+            // buttonRoomIndex2
             // 
-            this.pictureSpacing.Image = global::Illumination_Design_Calculator.Properties.Resources.pictureSpacing;
-            this.pictureSpacing.Location = new System.Drawing.Point(84, 235);
-            this.pictureSpacing.Name = "pictureSpacing";
-            this.pictureSpacing.Size = new System.Drawing.Size(247, 105);
-            this.pictureSpacing.TabIndex = 10;
-            this.pictureSpacing.TabStop = false;
-            this.pictureSpacing.Visible = false;
+            this.buttonRoomIndex2.Location = new System.Drawing.Point(121, 358);
+            this.buttonRoomIndex2.Name = "buttonRoomIndex2";
+            this.buttonRoomIndex2.Size = new System.Drawing.Size(75, 23);
+            this.buttonRoomIndex2.TabIndex = 17;
+            this.buttonRoomIndex2.Text = "part 2";
+            this.buttonRoomIndex2.UseVisualStyleBackColor = true;
+            this.buttonRoomIndex2.Visible = false;
+            this.buttonRoomIndex2.Click += new System.EventHandler(this.buttonRoomIndex2_Click);
             // 
-            // buttonRoom1
+            // buttonRoomIndex1
             // 
-            this.buttonRoom1.Location = new System.Drawing.Point(305, 290);
-            this.buttonRoom1.Name = "buttonRoom1";
-            this.buttonRoom1.Size = new System.Drawing.Size(50, 50);
-            this.buttonRoom1.TabIndex = 17;
-            this.buttonRoom1.Text = "part 1";
-            this.buttonRoom1.UseVisualStyleBackColor = true;
-            this.buttonRoom1.Visible = false;
-            this.buttonRoom1.Click += new System.EventHandler(this.buttonRoom1_Click);
-            // 
-            // buttonRoom2
-            // 
-            this.buttonRoom2.Location = new System.Drawing.Point(305, 351);
-            this.buttonRoom2.Name = "buttonRoom2";
-            this.buttonRoom2.Size = new System.Drawing.Size(50, 50);
-            this.buttonRoom2.TabIndex = 18;
-            this.buttonRoom2.Text = "part 2";
-            this.buttonRoom2.UseVisualStyleBackColor = true;
-            this.buttonRoom2.Visible = false;
-            this.buttonRoom2.Click += new System.EventHandler(this.buttonRoom2_Click);
+            this.buttonRoomIndex1.Location = new System.Drawing.Point(40, 358);
+            this.buttonRoomIndex1.Name = "buttonRoomIndex1";
+            this.buttonRoomIndex1.Size = new System.Drawing.Size(75, 23);
+            this.buttonRoomIndex1.TabIndex = 16;
+            this.buttonRoomIndex1.Text = "part 1";
+            this.buttonRoomIndex1.UseVisualStyleBackColor = true;
+            this.buttonRoomIndex1.Visible = false;
+            this.buttonRoomIndex1.Click += new System.EventHandler(this.buttonRoomIndex1_Click);
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(684, 436);
+            this.ClientSize = new System.Drawing.Size(1084, 436);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.groupBox8);
@@ -1805,11 +1909,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCavityWidth)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSpacing)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRoomIndex11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSpacingLayout12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1938,14 +2046,22 @@
         private System.Windows.Forms.Button buttonHelpHide;
         private System.Windows.Forms.RichTextBox rtbHelp;
         private System.Windows.Forms.PictureBox pictureSpacing;
-        private System.Windows.Forms.PictureBox pictureSpacingLayout1;
-        private System.Windows.Forms.PictureBox pictureSpacingLayout2;
+        private System.Windows.Forms.PictureBox pictureSpacingLayout11;
+        private System.Windows.Forms.PictureBox pictureSpacingLayout22;
+        private System.Windows.Forms.PictureBox pictureSpacingLayout21;
+        private System.Windows.Forms.PictureBox pictureSpacingLayout12;
+        private System.Windows.Forms.PictureBox pictureRoomIndex11;
+        private System.Windows.Forms.PictureBox pictureRoomIndex22;
+        private System.Windows.Forms.PictureBox pictureRoomIndex21;
+        private System.Windows.Forms.PictureBox pictureRoomIndex12;
+        private System.Windows.Forms.Button buttonSpacingLayout4;
+        private System.Windows.Forms.Button buttonSpacingLayout3;
         private System.Windows.Forms.Button buttonSpacingLayout2;
         private System.Windows.Forms.Button buttonSpacingLayout1;
-        private System.Windows.Forms.PictureBox pictureRoomIndex1;
-        private System.Windows.Forms.PictureBox pictureRoomIndex2;
-        private System.Windows.Forms.Button buttonRoom2;
-        private System.Windows.Forms.Button buttonRoom1;
+        private System.Windows.Forms.Button buttonRoomIndex4;
+        private System.Windows.Forms.Button buttonRoomIndex3;
+        private System.Windows.Forms.Button buttonRoomIndex2;
+        private System.Windows.Forms.Button buttonRoomIndex1;
     }
 }
 

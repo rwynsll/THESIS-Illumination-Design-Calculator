@@ -22,8 +22,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Illumination Design Calculator</ProductName>
+    <PublisherName>SOX</PublisherName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -139,6 +141,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pictureRoomIndex2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureSpacingLayout11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureRoomIndex12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureSpacingLayout12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureSpacingLayout21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureSpacingLayout22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureRoomIndex11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureRoomIndex21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureRoomIndex22.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

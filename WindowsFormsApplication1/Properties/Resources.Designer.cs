@@ -73,9 +73,49 @@ namespace Illumination_Design_Calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pictureRoomIndex11 {
+            get {
+                object obj = ResourceManager.GetObject("pictureRoomIndex11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictureRoomIndex12 {
+            get {
+                object obj = ResourceManager.GetObject("pictureRoomIndex12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pictureRoomIndex2 {
             get {
                 object obj = ResourceManager.GetObject("pictureRoomIndex2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictureRoomIndex21 {
+            get {
+                object obj = ResourceManager.GetObject("pictureRoomIndex21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictureRoomIndex22 {
+            get {
+                object obj = ResourceManager.GetObject("pictureRoomIndex22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +143,49 @@ namespace Illumination_Design_Calculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pictureSpacingLayout11 {
+            get {
+                object obj = ResourceManager.GetObject("pictureSpacingLayout11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictureSpacingLayout12 {
+            get {
+                object obj = ResourceManager.GetObject("pictureSpacingLayout12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pictureSpacingLayout2 {
             get {
                 object obj = ResourceManager.GetObject("pictureSpacingLayout2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictureSpacingLayout21 {
+            get {
+                object obj = ResourceManager.GetObject("pictureSpacingLayout21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictureSpacingLayout22 {
+            get {
+                object obj = ResourceManager.GetObject("pictureSpacingLayout22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

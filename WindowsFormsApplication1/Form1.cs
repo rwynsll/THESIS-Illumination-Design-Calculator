@@ -598,12 +598,16 @@ namespace WindowsFormsApplication1
                     " adjacent luminaires (centre to centre), to their height above the working plane." +
                     " For a rectangular arrangement of luminaires and by approximation,";
                 pictureSpacing.Visible = true;
-                pictureSpacingLayout1.Visible = false;
-                pictureSpacingLayout2.Visible = false;
+                pictureSpacingLayout11.Visible = false;
+                pictureSpacingLayout12.Visible = false;
+                pictureSpacingLayout21.Visible = false;
+                pictureSpacingLayout22.Visible = false;
                 pictureSpacing.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex11.Visible = false;
+                pictureRoomIndex12.Visible = false;
+                pictureRoomIndex21.Visible = false;
+                pictureRoomIndex22.Visible = false;
                 buttonSpaceHide();
-                pictureRoomIndex1.Visible = false;
-                pictureRoomIndex2.Visible = false;
                 buttonRoomHide();
             }
             if (comboHelp.SelectedIndex == 1)
@@ -614,25 +618,34 @@ namespace WindowsFormsApplication1
                     " provide the typical arrangement of said luminaires. \n\n" +
                 "Typical luminaires in various interiors \n\n";
                 pictureSpacing.Visible = false;
-                pictureSpacingLayout1.Visible = true;
+                pictureSpacingLayout11.Visible = true;
                 buttonSpaceShow();
-                pictureSpacingLayout1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureSpacingLayout2.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex1.Visible = false;
-                pictureRoomIndex2.Visible = false;
                 buttonRoomHide();
+                pictureSpacingLayout11.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureSpacingLayout12.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureSpacingLayout21.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureSpacingLayout22.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex11.Visible = false;
+                pictureRoomIndex12.Visible = false;
+                pictureRoomIndex21.Visible = false;
+                pictureRoomIndex22.Visible = false;
+
             }
             if (comboHelp.SelectedIndex == 2)
             {
                 rtbHelp.Text = "          ";
-                pictureRoomIndex1.Visible = true;
+                pictureRoomIndex11.Visible = true;
                 pictureSpacing.Visible = false;
-                pictureSpacingLayout1.Visible = false;
-                pictureSpacingLayout2.Visible = false;
-                buttonSpaceHide();
-                pictureRoomIndex1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureRoomIndex2.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureSpacingLayout11.Visible = false;
+                pictureSpacingLayout12.Visible = false;
+                pictureSpacingLayout21.Visible = false;
+                pictureSpacingLayout22.Visible = false;
                 buttonRoomShow();
+                buttonSpaceHide();
+                pictureRoomIndex11.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex12.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex21.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureRoomIndex22.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             if (comboHelp.SelectedIndex == 3)
             {
@@ -659,57 +672,111 @@ namespace WindowsFormsApplication1
                     " sources of light in a room. Most lamps direct light downward, with the exception of a torchiere, which is a floor lamp that" +
                     " directs its light upward. Lamps are often used as task lights, particularly for reading, but can also provide ambient light. \n\n";
                 pictureSpacing.Visible = false;
-                pictureSpacingLayout1.Visible = false;
-                pictureSpacingLayout2.Visible = false;
+                pictureSpacingLayout11.Visible = false;
+                pictureSpacingLayout12.Visible = false;
+                pictureSpacingLayout21.Visible = false;
+                pictureSpacingLayout22.Visible = false;
+                pictureRoomIndex11.Visible = false;
+                pictureRoomIndex12.Visible = false;
+                pictureRoomIndex21.Visible = false;
+                pictureRoomIndex22.Visible = false;
                 buttonSpaceHide();
-                pictureRoomIndex1.Visible = false;
-                pictureRoomIndex2.Visible = false;
                 buttonRoomHide();
             }
         }
+
         private void buttonSpaceShow()
         {
             buttonSpacingLayout1.Visible = true;
             buttonSpacingLayout2.Visible = true;
+            buttonSpacingLayout3.Visible = true;
+            buttonSpacingLayout4.Visible = true;
         }
         private void buttonSpaceHide()
         {
             buttonSpacingLayout1.Visible = false;
             buttonSpacingLayout2.Visible = false;
+            buttonSpacingLayout3.Visible = false;
+            buttonSpacingLayout4.Visible = false;
         }
-
+        private void buttonRoomShow()
+        {
+            buttonRoomIndex1.Visible = true;
+            buttonRoomIndex2.Visible = true;
+            buttonRoomIndex3.Visible = true;
+            buttonRoomIndex4.Visible = true;
+        }
+        private void buttonRoomHide()
+        {
+            buttonRoomIndex1.Visible = false;
+            buttonRoomIndex2.Visible = false;
+            buttonRoomIndex3.Visible = false;
+            buttonRoomIndex4.Visible = false;
+        }
+        //spacing layout
         private void buttonSpacingLayout1_Click(object sender, EventArgs e)
         {
-            pictureSpacingLayout1.Visible = true;
-            pictureSpacingLayout2.Visible = false;
+            pictureSpacingLayout11.Visible = true;
+            pictureSpacingLayout12.Visible = false;
+            pictureSpacingLayout21.Visible = false;
+            pictureSpacingLayout22.Visible = false;
         }
 
         private void buttonSpacingLayout2_Click(object sender, EventArgs e)
         {
-            pictureSpacingLayout1.Visible = false;
-            pictureSpacingLayout2.Visible = true;
-        }
-        private void buttonRoomShow()
-        {
-            buttonRoom1.Visible = true;
-            buttonRoom2.Visible = true;
-        }
-        private void buttonRoomHide()
-        {
-            buttonRoom1.Visible = false;
-            buttonRoom2.Visible = false;
+            pictureSpacingLayout11.Visible = false;
+            pictureSpacingLayout12.Visible = true;
+            pictureSpacingLayout21.Visible = false;
+            pictureSpacingLayout22.Visible = false;
         }
 
-        private void buttonRoom1_Click(object sender, EventArgs e)
+        private void buttonSpacingLayout3_Click(object sender, EventArgs e)
         {
-            pictureRoomIndex1.Visible = true;
-            pictureRoomIndex2.Visible = false;
+            pictureSpacingLayout11.Visible = false;
+            pictureSpacingLayout12.Visible = false;
+            pictureSpacingLayout21.Visible = true;
+            pictureSpacingLayout22.Visible = false;
         }
 
-        private void buttonRoom2_Click(object sender, EventArgs e)
+        private void buttonSpacingLayout4_Click(object sender, EventArgs e)
         {
-            pictureRoomIndex1.Visible = false;
-            pictureRoomIndex2.Visible = true;
+            pictureSpacingLayout11.Visible = false;
+            pictureSpacingLayout12.Visible = false;
+            pictureSpacingLayout21.Visible = false;
+            pictureSpacingLayout22.Visible = true;
         }
+
+        private void buttonRoomIndex1_Click(object sender, EventArgs e)
+        {
+            pictureRoomIndex11.Visible = true;
+            pictureRoomIndex12.Visible = false;
+            pictureRoomIndex21.Visible = false;
+            pictureRoomIndex22.Visible = false;
+        }
+
+        private void buttonRoomIndex2_Click(object sender, EventArgs e)
+        {
+            pictureRoomIndex11.Visible = false;
+            pictureRoomIndex12.Visible = true;
+            pictureRoomIndex21.Visible = false;
+            pictureRoomIndex22.Visible = false;
+        }
+
+        private void buttonRoomIndex3_Click(object sender, EventArgs e)
+        {
+            pictureRoomIndex11.Visible = false;
+            pictureRoomIndex12.Visible = false;
+            pictureRoomIndex21.Visible = true;
+            pictureRoomIndex22.Visible = false;
+        }
+
+        private void buttonRoomIndex4_Click(object sender, EventArgs e)
+        {
+            pictureRoomIndex11.Visible = false;
+            pictureRoomIndex12.Visible = false;
+            pictureRoomIndex21.Visible = false;
+            pictureRoomIndex22.Visible = true;
+        }
+
     }
 }
